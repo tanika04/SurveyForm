@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>survey form></form>
+    </title>
+    <link rel="stylesheet" href="p3.css">
+</head>
+
+<body>
+    <h1 class=heading id="head">Student Engagement Survey</h1>
+    <div class="container">
+        <form action="p4.html" method="get">
+            <div id="content1">
+                <label>Name *<br>
+                    <input type="text" name="text" placeholder="Enter your name" class="box" required><br><br></label>
+                <label>Email *</label><br>
+                <input type="email" name="email" placeholder="Enter your email" class="box" required><br><br>
+                <label>D.O.B *</label><br>
+                <input type="date" name="date" id="date" class="box" required min="1990-01-01" max="2023-05-23"><br><br>
+                <label>Address</label><br>
+                <textarea name="address" id="address" cols="40" rows="10" placeholder="Enter your address" class="adr">
+                    </textarea><br><br>
+                <label>Contact *</label><br>
+                <input type="number" name="number" placeholder="Enter your phone number" class="box" required
+                    min="1000000000" max="9999999999"><br><br>
+                <label>Course</label><br>
+                <div id="option1" class="branch">
+                    <select required>
+                        <option name="select your course">select your course</option>
+                        <option value="ENGINEERING PROGRAMS">ENGINEERING PROGRAMS</option>
+                        <option value="COMPUTER APPLICATION PROGRAMS">COMPUTER APPLICATION PROGRAMS</option>
+                        <option value="BUSINESS & ACCOUNTING">BUSINESS & ACCOUNTING</option>
+                        <option value="HOSPITALITY & HOTEL MGMT">HOSPITALITY & HOTEL MGMT</option>
+                        <option value="DESIGN SCHOOL">DESIGN SCHOOL</option>
+                        <option value="JOURNALISM & MASS COMM.">JOURNALISM & MASS COMM.</option>
+                        <option value="LAW">LAW</option>
+                        <option value="PLANNING & ARCHITECTURE">PLANNING & ARCHITECTURE</option>
+                        <option value="PHARMACEUTICAL SCIENCES">PHARMACEUTICAL SCIENCES</option>
+                        <option value="B.E. LATERAL ENTERY">B.E. LATERAL ENTERY</option>
+                        <option value="ALLIED HEALTH SCIENCES">ALLIED HEALTH SCIENCES</option>
+                    </select>
+                </div>
+                <br><label>Branch</label><br>
+                <div id="option1">
+                    <select required>
+                        <option name="Branch name">Branch name</option>
+                        <option value="computer science and engineering">computer science and engineering</option>
+                        <option value="electronics & comm. enginnering">electronics & comm. enginnering</option>
+                        <option value="electrical enginnering">electrical enginnering</option>
+                        <option value="civil enginnering">civil enginnering</option>
+                        <option value="mechanical enginnering">mechanical enginnering</option>
+                        <option value="mechatronics engineering">mechatronics engineering</option>
+                        <option value="automobile engineering with ARAI">automobile engineering with ARAI</option>
+                        <option value="software engineering with Deakin University">software engineering with Deakin
+                            University</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label id="head1">Gender</label><br><br>
+                    <label for="male">
+                        <input type="radio" name="radio" class="larger" id="male" required>Male
+                    </label><br>
+                    <label for="female">
+                        <input type="radio" name="radio" class="larger" id="female" required>Female
+                    </label><br>
+                    <label for="Other">
+                        <input type="radio" name="radio" class="larger" id="Other" required>Other
+                    </label><br>
+                    <br>
+                    <label id="head1">Are You Dayscholar or Hosteller ?</label><br><br>
+                    <label for="ds"><input type="radio" name="radio" class="larger" id="ds"
+                            required>Dayscholar</label>&nbsp;&nbsp;&nbsp;
+                    <label for="nds"><input type="radio" name="radio" class="larger" id="nds"
+                            required>Hosteller</label><br><br>
+                    <BR><BR>
+                    <div class="submit-btn">
+                        <button type="submit" id="submit" class="borderexample" target="_blank">Submit</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
