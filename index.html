@@ -38,18 +38,6 @@
     <div class="ripple">
     </div>
     <div class="rip"></div>
-
-    <script>
-        // const scriptURL="https://docs.google.com/spreadsheets/d/1-MZ4-7l79I9fLCpQWEQdkrR0QU4EPq9z7aKeWbWtCCY/edit?usp=sharing"
-        const scriptURL="https://script.google.com/macros/s/AKfycbzQCBKkm8QC2512w-7AVJ_Pn0M0yu4VmwGwhTvIgOl-ifWYHX5v0FBA6JlpcxVPDvNt/exec"
-        const form=document.forms[google-sheet]
-        form.addEventListener('submit',e=>{
-            e.preventDefault()
-            fetch(scriptURL,{method:'POST',body:new FormData(form) } )
-            .then(response=>alert("Thanks"))
-            .catch(error=>console.error('Error',error.message))
-        })
-    </script>
 </body>
 
 </html>
